@@ -1,13 +1,22 @@
 import os
-from tabnanny import filename_only 
+from tabnanny import filename_only
 
 def remove_extension(filename):
-
     root, ext = os.path.splitext(filename)
-    return root 
+    return root
 
-filename = "haldlgldplgnggkjaafhelgiaglafanh", "ihjgnoifhnilgbjicdpingfgjhjeffij", "kmpjlilnemjciohjckjadmgmicoldglf", "ifeifkfohlobcbhmlfkenopaimbmnahb", "jaoebcikabjppaclpgbodmmnfjihdngk", "kbohafcopfpigkjdimdcdgenlhkmhbnc", "gcjpefhffmcgplgklffgbebganmhffje", "lgcbihdlknkcmmnapfocjbkdefkhmolo"
+filenames = [
+    "haldlgldplgnggkjaafhelgiaglafanh",
+    "ihjgnoifhnilgbjicdpingfgjhjeffij",
+    "kmpjlilnemjciohjckjadmgmicoldglf",
+    "ifeifkfohlobcbhmlfkenopaimbmnahb",
+    "jaoebcikabjppaclpgbodmmnfjihdngk",
+    "kbohafcopfpigkjdimdcdgenlhkmhbnc",
+    "gcjpefhffmcgplgklffgbebganmhffje",
+    "lgcbihdlknkcmmnapfocjbkdefkhmolo"
+]
 
-for filename in filename_only: 
+for filename in filenames:
     new_filename = remove_extension(filename)
     print(new_filename)
+
